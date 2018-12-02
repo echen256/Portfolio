@@ -1,0 +1,118 @@
+.navbar-nav{
+   
+    flex-direction:row !important;
+    text-align:center
+}
+.nav-item{
+    padding-right:10px;
+    padding-left:10px;
+    display: inline-block;
+}
+
+.teal{
+    background-color: #4aaaa5 !important;
+}
+
+.name {
+    padding-top: 30px;
+    padding-bottom:30px;
+    text-align: center;
+    vertical-align: text-bottom;
+    font-size: 24pt;
+    font-family: 'Georgia, Times, Times New Roman, serif';
+    color: white;
+    float: left;
+    font-weight: bold;
+    line-height:20px;
+}
+
+.aboutMe{
+    font-size:28pt;
+    font-family: 'Georgia, Times, Times New Roman, serif';
+    font-weight: bold;
+    line-height:200%;
+    color: #4aaaa5;
+}
+.content{
+    height:75%;
+    line-height: 40px;
+    clear: both;
+    position: relative;
+    padding: 60px;
+    font-size: 16pt;
+    color:  rgb(173, 173, 173);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.pic{
+    position: relative;
+    width: 40%;
+    height: 55%;
+    margin-top:10px;
+    margin-right:40px;
+    margin-bottom:40px;
+    float: left;
+    clear:both;
+}
+
+
+.headerShadow{
+    background-color:rgb(158, 158, 158);
+    float:left;
+    margin-bottom:20px;
+    width:100%;
+    height: 2px;
+}
+.portpic{
+    position: relative;
+    width:200px;
+    height:200px;
+    margin: 2.5%;
+    float: left;
+}
+
+.label{
+    position: relative;
+    width:100%;
+    height:15%;
+    text-align:center;
+    line-height:125%;
+    font-size:16pt;
+    color:white;
+    top: -25%;
+}
+
+.blueOutline{
+    position: relative;
+    background-color:teal;
+    width:100%;
+    height:10px;
+    bottom: -177px;
+}
+.footer2{
+    background-color:#333;
+    position: relative;
+    clear:both;
+    text-align:center;
+    width: 100%;
+    line-height:125px;
+    color:rgb(190, 188, 188);
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    bottom: -177px;
+    height:75px;
+}
+
+html, 
+body {
+    height: 100%;
+}
+@media only screen and (max-width: 640px) {
+
+    .pic{
+        width:100%;
+        height:100%;
+    }
+     .portpic{
+        height:100%;
+    } 
+
+}
