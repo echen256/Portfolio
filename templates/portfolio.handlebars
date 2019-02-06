@@ -21,20 +21,27 @@
 <script>
 
     var root = $("#root");
-    var links = ["https://group-project-1.github.io/Presentation/",
-        "https://github.com/echen256/bAmazon",
+    var projects = {
+        {
+            link : "https://group-project-1.github.io/Presentation/",
+            title : "Project 1: Event Finder"
+        },
+        {
+            link : "https://github.com/echen256/bAmazon",
+            title :"BAmazon: Database Intro"
+        },
+        {
+            link : "https://friendfinder978567583.herokuapp.com/",
+            title :"FriendFinder: MySQL Intro"
+        },
+        {
+            link : "https://lit-thicket-39018.herokuapp.com/",
+            title :"Project 2: StockX"
+        }
+    };
 
-        "https://friendfinder978567583.herokuapp.com/",
-        "https://lit-thicket-39018.herokuapp.com/"
-    ];
-    var titles = ["Project 1: Event Finder",
-        "BAmazon: Database Intro",
-        "FriendFinder: MySQL Intro",
-        "Project 2: StockX"
-    ];
-
-    for (var i = 0; i < titles.length; i++) {
-        var workEntry = Handlebars.templates.workEntry({ link: links[i], title: titles[i] });
+    for (var i = 0; i < projects.length; i++) {
+        var workEntry = Handlebars.templates.workEntry(projects[i]);
         root.append($(workEntry));
     }
 
