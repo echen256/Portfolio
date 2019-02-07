@@ -1,18 +1,17 @@
-<div class="row">
-    <div class="container ">
-        <div class="row border-bottom border-secondary">
-            <p class="aboutMe">
-                Portfolio
-            </p>
+<div class="container ">
+    <div class="row border-bottom border-secondary  textContainer">
+        <p class="aboutMe">
+            Portfolio
+        </p>
 
-        </div>
-        <div class="row" id = "root">
-
-        </div>
+    </div>
+    <div class="row" id="root">
 
     </div>
 
 </div>
+
+
 
 
 
@@ -21,24 +20,24 @@
 <script>
 
     var root = $("#root");
-    var projects = {
+    var projects = [
         {
-            link : "https://group-project-1.github.io/Presentation/",
-            title : "Project 1: Event Finder"
+            link: "https://github.com/echen256/bAmazon",
+            title: "BAmazon: Database Intro"
         },
         {
-            link : "https://github.com/echen256/bAmazon",
-            title :"BAmazon: Database Intro"
+            link: "https://group-project-1.github.io/Presentation",
+            title: "Project 1: Event Finder"
         },
         {
-            link : "https://friendfinder978567583.herokuapp.com/",
-            title :"FriendFinder: MySQL Intro"
+            link: "https://friendfinder978567583.herokuapp.com",
+            title: "FriendFinder: MySQL Intro"
         },
         {
-            link : "https://lit-thicket-39018.herokuapp.com/",
-            title :"Project 2: StockX"
+            link: "https://lit-thicket-39018.herokuapp.com",
+            title: "Project 2: StockX"
         }
-    };
+    ];
 
     for (var i = 0; i < projects.length; i++) {
         var workEntry = Handlebars.templates.workEntry(projects[i]);
