@@ -1,30 +1,27 @@
-<!Doctype HTML>
-
-
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <link rel="stylesheet" type="text/css" href="Assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <link rel="stylesheet" type="text/css" href="Assets/templateCss.css">
 </head>
 
 <body>
-    
+
     <div class="container">
-        <div class="row border-bottom border-secondary">
+        <div class="row border-bottom border-secondary textContainer">
 
-            <p class="col-sm-12 col-md-3 name teal">
-                Eric Chen
-            </p>
-            <p class="col-sm-12 col-md-3 h-0">
 
-            </p>
-            <nav class="col-sm-12 col-md-6 navbar navbar-light bg-light">
 
-                <ul class="navbar-nav mx-auto">
+            <nav class="navbar navbar-light bg-light">
+                <p class="float-left name cleafix">
+                    Eric Chen
+                </p>
+                <ul class="float-right navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About Me</a>
                     </li>
@@ -45,27 +42,12 @@
 
         </div>
 
-
-        <div class="row">
-            <div class="container ">
-
-                <div class="row border-bottom border-secondary">
-                    <p class="aboutMe">
-                        Portfolio
-                    </p>
-
-                </div>
-
-
-                <div class="row root">
-                </div>
-
-            </div>
-
-        </div>
     </div>
 
+    <div id="content">
+
     </div>
+
     <div>
         <div class="blueOutline"></div>
         <div class="footer2">
@@ -73,35 +55,17 @@
         </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        crossorigin="anonymous"></script>
-
-    <script>
-      
-        var root = $(".root");
-        var links = ["https://group-project-1.github.io/Presentation/",
-        "https://github.com/echen256/bAmazon",
-
-        "https://friendfinder978567583.herokuapp.com/",
-        "https://lit-thicket-39018.herokuapp.com/"
-        ];
-        var titles = ["Project 1: Event Finder",
-            "BAmazon: Database Intro",
-            "FriendFinder: MySQL Intro",
-            "Project 2: StockX"
-        ];
-
-        for (var i = 0; i < titles.length;i++){
-            var a =  $("<a class = 'nav-link' href ='" + links[i] + "'>" + titles[i] + "</a>");
-            var div = $("<div class='col-sm-12 col-md-4 label'>");
-            div.append(a);
-            root.append(div);
-        }
-    </script>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
 
 
+<script src="templates/templateJs/templates.tpl.js"></script>
+
+<script>
+    var template = Handlebars.templates.portfolio;
+    $("#content").html(template);
+</script>
 
 </html>
