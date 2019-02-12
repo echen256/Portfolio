@@ -38,12 +38,13 @@
             title: "Project 2: StockX"
         },
         {
-            link : "https://protected-fjord-38881.herokuapp.com/",
+            link : "https://protected-fjord-38881.herokuapp.com",
             title : "MongoDB Hw: News Scraper"
         }
     ];
 
     for (var i = 0; i < projects.length; i++) {
+        console.log(projects[i]);
         var workEntry = Handlebars.templates.workEntry(projects[i]);
         root.append($(workEntry));
     }
