@@ -2,39 +2,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="Assets/reset.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
     <link rel="stylesheet" type="text/css" href="Assets/style.css">
-    <link rel="stylesheet" type="text/css" href="Assets/templateCss.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row border-bottom border-secondary textContainer">
+    <div class="navbar bottomBorder">
+        <div class="navbar-child"> Portfolio <a href="/portfolio"></a></div>
+        <div class="navbar-child"> Index <a href="/index"></a></div>
+        <div class="navbar-child"> Contact <a href="/contact"></a></div>
+
+    </div>
 
 
+    <div class="content">
+        <div class="introduction justified ">
+               
+            <div id="portfolioPic" class="">
+                <img width="200px'" height="200px"
+                    src="./assets//everything-i-say-is-right-01-rektseller-ｐｌａｔｏ-1643996.png">
+            </div>
 
-
-            <span class=""></span>
+            <div>
+                    <div class=" bottomBorder">
+                                Eric Chen:  Web Developer
+                    </div>
+    
+                    <div class="justified font-med ">
+                                Skills: NodeJS, React, Javascript, CSS, HTML, C#
+                     </div>
+                </div>
 
 
         </div>
 
-    </div>
-
-    <div id="content">
 
     </div>
 
-    <div>
-        <div class="blueOutline"></div>
-        <div class="footer2">
-            Copyright
+    <div class="content">
+        <div class="description margin">
+            <div class="descriptionHeader bottomBorder">
+                About Me
+            </div>
+
+            <div id="descriptionText">
+                Hi! My name is Eric Chen and I am an aspiring web developer. I have recently graduated from the UC
+                Berekely
+                Online Bootcamp, which you can find here.
+                Below are some of the projects and activities we worked on in class.
+            </div>
         </div>
     </div>
+
+    <div class = "work margin">
+        <div class = "workHeader bottomBorder"> Portfolio</div>
+        <div class = "bottomBorder workContainer wrap">
+
+            <div class = "workItem">
+                <img src = "./assets/stockmarket.png" width = "200px" height = "200px">
+                <div class ="workDesc">
+                    This is a stock market app. Link is <a href = ""> here</a>
+                </div>
+            </div>
+            <div class = "workItem">
+                    <img src = "./assets/stockmarket.png" width = "200px" height = "200px">
+                    <div class ="workDesc">
+                        This is a stock market app. Link is <a href = ""> here</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class = "work margin">
+            <div class = "workHeader bottomBorder"> Skills</div>
+            <div class = "bottomBorder workContainer ">
+    
+                
+            </div>
+        </div>
+
+        <div class = "work margin">
+                <div class = "workHeader bottomBorder"> Contact</div>
+                <div class = "bottomBorder workContainer ">
+        
+                    
+                </div>
+            </div>
 
 </body>
 
@@ -45,8 +102,7 @@
 <script src="templates/templateJs/templates.tpl.js"></script>
 
 <script>
-    var template = Handlebars.templates.portfolio;
-    $("#content").html(template);
+
 </script>
 
 </html>
