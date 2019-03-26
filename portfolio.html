@@ -6,31 +6,31 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="Assets/style.css">
 </head>
 
 <body>
 
-    
+
 
 
     <div class="content">
         <div class="introduction justified ">
-               
-            <div id="portfolioPic" class="">
-                <img width="500px'" height="500px"
-                    src="./assets//everything-i-say-is-right-01-rektseller-ｐｌａｔｏ-1643996.png">
+
+            <div class="circularCropper" class="">
+                <img class="rounded portfolioPic" src="./assets//everything-i-say-is-right-01-rektseller-ｐｌａｔｏ-1643996.png">
             </div>
 
             <div>
-                    <div style = "font-size: 70px" class = " bottomBorder">
-                                Eric Chen:  Web Developer
-                    </div>
-    
-                    <div style = "font-size: 55px" class="justified font-med ">
-                                Skills: NodeJS, React, Javascript, CSS, HTML, C#
-                     </div>
+                <div style="font-size: 70px" class=" bottomBorder">
+                    Eric Chen
                 </div>
+
+                <div style="font-size: 55px" class="justified font-med ">
+                    Full Stack Web Developer
+                </div>
+            </div>
 
 
         </div>
@@ -53,58 +53,79 @@
         </div>
     </div>
 
-    <div class = "work margin">
-        <div class = "workHeader bottomBorder"> Portfolio</div>
-        <div class = "bottomBorder workContainer wrap">
+    <div class="work margin">
+        <div class="workHeader bottomBorder"> Portfolio</div>
+        <div class="bottomBorder workContainer wrap">
 
-            <div class = "workItem">
-                <img src = "./assets/stockmarket.png" width = "200px" height = "200px">
+            <div class="workItem modalButton">
+                <img src="./assets/stockmarket.png" width="200px" height="200px">
 
 
-                <div class ="workDesc">
-                    <button class = "modalButton">
-                        Title
-                        
-                       
-                    </button>
+                <div class="workTitle bottomBorder">
+                    Stock Market App
 
-                    
+
                 </div>
+                <div class="workSkills ">
+                    Skills: Node, MySQL, Express
 
+
+                </div>
 
 
             </div>
 
 
-           
+
         </div>
     </div>
 
-    <div id="myModal" class="modal">
 
-            <!-- Modal content -->
+    <div class="modalContainer">
+
+        <div id="myModal" class="modal">
             <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
-            </div>
-          
-          </div>
-
-    <div class = "work margin">
-            <div class = "workHeader bottomBorder"> Skills</div>
-            <div class = "bottomBorder workContainer ">
-    
-                
-            </div>
-        </div>
-
-        <div class = "work margin">
-                <div class = "workHeader bottomBorder"> Contact</div>
-                <div class = "bottomBorder workContainer ">
-        
+                <div class="modal-header">
+                        Title
+                    <span class="close">X</span>
                     
                 </div>
+                <div class="modal-body">
+                    <div>
+                        <p>Some text in the Modal..</p>
+                    </div>
+
+                </div>
+
             </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+    <div class="work margin">
+        <div class="workHeader bottomBorder"> Skills</div>
+        <div class="bottomBorder workContainer ">
+
+
+        </div>
+    </div>
+
+    <div class="work margin">
+        <div class="workHeader bottomBorder"> Contact</div>
+        <div class="bottomBorder workContainer ">
+
+
+        </div>
+    </div>
 
 </body>
 
@@ -115,11 +136,14 @@
 <script src="templates/templateJs/templates.tpl.js"></script>
 
 <script>
+    $(".close").on("click", function () {
+        $(this).parent().parent().parent().css("display", "none");
+    });
 
-    $(".modalButton").on("click", function(){
+    $(".modalButton").on("click", function () {
 
-        $(".modal").css("display","block");
-        
+        $(".modal").css("display", "block");
+
     })
 </script>
 
