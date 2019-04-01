@@ -1,0 +1,204 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    </nav>
+
+
+    <div class="content-light">
+        <div class="introduction justified ">
+
+            <div class="circularCropper" class="">
+                <img class="rounded portfolioPic" src="./assets//everything-i-say-is-right-01-rektseller-ｐｌａｔｏ-1643996.png">
+            </div>
+
+            <div>
+                <div style="font-size: 70px" class=" bottomBorder">
+                    Eric Chen
+                </div>
+
+                <div style="font-size: 55px" class="justified font-med ">
+                    Full Stack Web Developer
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="content-dark">
+        <div class="description margin">
+            <div class="descriptionHeader bottomBorder">
+                About Me
+            </div>
+
+            <div id="descriptionText">
+                Hi! My name is Eric Chen and I am an aspiring web developer. I have recently graduated from the UC
+                Berekely
+                Online Bootcamp, which you can find here.
+                Below are some of the projects and activities we worked on in class.
+            </div>
+        </div>
+    </div>
+
+    <div class="content-light margin">
+        <div class="workHeader bottomBorder"> Portfolio</div>
+        <div class="workContainer">
+
+            <div class="margin-20px modalButton">
+
+                <img src="./assets/stockmarket.png" width="200px" height="200px">
+
+            </div>
+            <div class="margin-20px modalButton">
+
+                <img src="./assets/t_logo_291_black.png" width="200px" height="200px">
+
+            </div>
+            <div class="margin-20px modalButton">
+
+                <img src="./assets/stockmarket.png" width="200px" height="200px">
+
+            </div>
+            <div class="margin-20px modalButton">
+
+                <img src="./assets/stockmarket.png" width="200px" height="200px">
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="modalContainer">
+
+        <div id="stockmarketModal" class="modal">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    StockX: Pratical Pratice Stock Market App
+                    <span class="close">X</span>
+                </div>
+
+                <div class="modal-body">
+                    <img class="margin-20px" src="assets/stockmarket.png">
+                    <div class="margin-20px">
+
+                        <p>StockX is a paper trading stock market app that was the second project I worked on at
+                            Bootcamp.
+                            The application allows the user to create an account, deposit imaginary money, and buy
+                            shares with that money.
+                            We utilized MySQL in order to store the user's transactions, balance, and positions, an
+                            Express
+                            backend in order to process purchase orders, <a href="https://iextrading.com/developer/">
+                                IEXTrading in order to get stock quotes,</a> and Bootstrap to style the frontend.
+                        </p>
+                        <br />
+                        <p>
+                            StockX was a major 2 week collaboration between 4 people. My main contribution was writing
+                            the routing code and the purchasing logic.
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class = "m-footer">
+                    <div >
+                        <div class = "thin-dark-border-bottom">
+                                Links
+                        </div>
+                        <div>
+                                <a>
+                                        <img class="linkIcon" src="./assets/heroku.png">
+                
+                                    </a>
+                                    <a href = "https://github.com/MarkHays/stocks">
+                                        <img class="linkIcon" src="./assets/git-cat.png">
+                                    </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="content-dark ">
+        <div class="margin">
+            <div class="workHeader bottomBorder"> Skills And Contact</div>
+
+            <div class="workContainer bottomBorder ">
+                <div style="margin:30px" class="skillsContainer ">
+                    <div>
+                        <div>
+                            Express
+                        </div>
+                        <div>
+                            Node
+                        </div>
+                        <div>
+                            MongoDB
+                        </div>
+                        <div>
+                            MySQL
+                        </div>
+                        <div>
+                            React
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="margin:30px" class="skillsContainer">
+                    <div>
+                        Contact
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work margin">
+        <div class="workHeader bottomBorder"> Contact</div>
+        <div class="bottomBorder workContainer "> </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+
+
+<script src="templates/templateJs/templates.tpl.js"></script>
+
+<script>
+    $(".close").on("click", function () {
+        $(this).parent().parent().parent().css("display", "none");
+    });
+
+    $(".modalButton").on("click", function () {
+
+        $(".modal").css("display", "block");
+
+    })
+</script>
+
+</html>
