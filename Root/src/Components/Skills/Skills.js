@@ -12,7 +12,7 @@ export class Skills extends Component {
                     <div className="workHeader bottomBorder"> Skills And Contact</div>
 
                     <div className="workContainer bottomBorder ">
-                        <div className="skillsContainer ">
+                        <div className="skillsContainer">
                             <div>
                                 <div>
                                     Express
