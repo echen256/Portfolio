@@ -8,17 +8,18 @@ import { Modal } from "../Components/Modal/Modal";
 import { Skills } from "../Components/Skills/Skills";
 import { Contact } from '../Components/Contact/Contact';
 
+
 export class Home extends Component {
 
     state = {
-        modalTitle: "1",
-        modalBody: "2",
-        modalGitUrl: "3",
-        modalHerokuUrl: "4",
+        modalTitle: "Placeholder Title",
+        modalBody: "Placeholder Body",
+        modalGitUrl: "Placeholder URL",
+        modalHerokuUrl: "Placeholder URL",
         modalVisible: false,
         modalImage : ""
     }
-
+ 
 
 
     render() {

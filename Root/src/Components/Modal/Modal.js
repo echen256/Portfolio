@@ -19,19 +19,20 @@ export class Modal extends Component {
 
   render() {
     return (
-      <div>
-        <div className="modalContainer">
-          <div id="stockmarketModal" className="modal">
+  
+          <div  className="modal">
             <div className="modal-content">
               <div className="modal-header">
+
                 {this.data.modalTitle}
                 <span className="close" onClick={this.closeModal}>
                   X
                 </span>
+
               </div>
 
               <div className="modal-body">
-                <img
+                <img width = '200px' height = "200px"
                   alt="null"
                   className="margin-20px"
                   src={this.data.modalImage}
@@ -54,8 +55,7 @@ export class Modal extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+    
     );
   }
 }

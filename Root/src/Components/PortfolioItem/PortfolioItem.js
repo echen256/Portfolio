@@ -6,9 +6,10 @@ export class PortfolioItem extends Component {
         console.log(this.props.root.state);
         if (! this.props.root.state.modalVisible){
             this.props.root.setState({
-                modalTitle : "f",
                 modalVisible : true,
-                modalImage : this.props.src
+                modalImage : this.props.src,
+                modalTitle : this.props.data.title,
+                modalBody: this.props.data.body
             });
         }
         
