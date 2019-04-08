@@ -3,6 +3,7 @@ import { PortfolioItem } from "./../PortfolioItem/PortfolioItem"
 
 import stockmarketimage from "./../../assets/stockmarket.png"
 import nytImage from "./../../assets/nytImage.png"
+import beeImage from "./../../assets/beeIcon.png"
 
 
 export class Portfolio extends Component {
@@ -36,21 +37,22 @@ export class Portfolio extends Component {
         src : nytImage
     }
 
+    newbeeAppEntry = {
+        title : 'Newbee Event Finder',
+        body : 'Placeholder',
+        src : beeImage
+    }
+
 
     render() {
         return (<div> <div className="content-light margin">
-            <div className="workHeader bottomBorder"> Portfolio</div>
-            <div className="workContainer">
-
-                <PortfolioItem data={this.stockAppEntry} root={this.props.root} src={stockmarketimage}></PortfolioItem>
+            <div className="header4 bottomBorder"> Portfolio</div>
+            <div className="flexContainer">
 
 
-
-
-
-
-                <PortfolioItem data={this.nytAppEntry} root={this.props.root} src={nytImage}></PortfolioItem>
-
+                <PortfolioItem data={this.stockAppEntry} root={this.props.root} ></PortfolioItem>
+                <PortfolioItem data={this.nytAppEntry} root={this.props.root} ></PortfolioItem>
+                <PortfolioItem data={this.newbeeAppEntry} root={this.props.root} ></PortfolioItem>
 
 
 

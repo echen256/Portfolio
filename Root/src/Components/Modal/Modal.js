@@ -40,7 +40,7 @@ export class Modal extends Component {
                 <div className="margin-20px">{this.data.modalBody}</div>
               </div>
 
-              <div className="m-footer">
+              <div className="modal-footer">
                 <div>
                   <div className="thin-dark-border-bottom">Links</div>
                   <div>

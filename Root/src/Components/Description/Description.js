@@ -13,10 +13,18 @@ export class Description extends Component {
                 </div>
     
                 <div className = "descriptionText">
-                    Hi! My name is Eric Chen and I am an aspiring web developer. I have recently graduated from the UC
+                <p>
+                Hi! My name is Eric Chen and I am an aspiring web developer. I have recently graduated from the UC
                     Berekely
                     Online Bootcamp, which you can find here.
-                    Below are some of the projects and activities we worked on in className.
+                    Below are the three main projects we worked on in class. Click on the image to find out more!
+                </p>
+                    <br/>
+                    
+
+                    I also come from a biotechnology background and have been working at an Immunohistonechemistry laboratory for the past year. If you are looking
+                    for someone who can work with both fields, I am your guy!
+                    
                 </div>
             </div>
         </div>

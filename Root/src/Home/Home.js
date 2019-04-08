@@ -33,12 +33,7 @@ export class Home extends Component {
                     <UserPic />
                     <Description />
                     <Portfolio root={this} />
-
-                    
-
-
                     <Skills />
-                    <Contact />
                 </div>
 
             </div>

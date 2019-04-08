@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import portfolioPic from "./../../assets/portfolioPic.png"
+import portfolioPic from "./../../assets/P4.jpg"
 
 export class UserPic extends Component {
     render() {
-        return (<div><div className="content-light">
+        return (<div><div className="margin-thick content-light">
             <div className="introduction justified ">
 
                 <div className="circularCropper">
@@ -20,6 +20,8 @@ export class UserPic extends Component {
                         Full Stack Web Developer
                 </div>
                 </div>
+
+
 
 
             </div>
