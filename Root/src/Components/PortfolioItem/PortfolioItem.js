@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class PortfolioItem extends Component {
 
     openModal () {
-        console.log(this.props.root.state);
+        console.log(this.props.root.state.modalVisible);
         if (! this.props.root.state.modalVisible){
             this.props.root.setState({
                 modalVisible : true,
@@ -26,7 +26,7 @@ export class PortfolioItem extends Component {
     render() {
         return (
             <div className="margin-20px" onClick = {this.openModal}>
-                <img alt="null" src={this.props.data.src} width="400px" height="400px" />
+                <img alt="null" src={this.props.data.src} width="70%" height = "auto" />
 
             </div>
         );

@@ -15,6 +15,7 @@ export class Modal extends Component {
     super(props, context);
     this.closeModal = this.closeModal.bind(this);
     this.data = this.props.root.state;
+    
   }
 
   render() {
@@ -32,12 +33,14 @@ export class Modal extends Component {
               </div>
 
               <div className="modal-body">
-                <img width = '200px' height = "200px"
+          
+              <img 
                   alt="null"
-                  className="margin-20px"
+                  className="modal-image"
                   src={this.data.modalImage}
                 />
-                <div className="margin-20px">{this.data.modalBody}</div>
+                
+                <div className="modal-text margin-20px">{this.data.modalBody}</div>
               </div>
 
               <div className="modal-footer">

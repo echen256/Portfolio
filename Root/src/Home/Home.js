@@ -26,16 +26,16 @@ export class Home extends Component {
         return (
             <div>
                 <div>
-                    {this.state.modalVisible ? <Modal root={this} /> : <div />}
-                </div>
-                <div>
+                    {this.state.modalVisible ? <Modal root={this} /> : <div>
                     <Navbar />
                     <UserPic />
                     <Description />
                     <Portfolio root={this} />
                     <Skills />
                 </div>
-
+                    }
+                </div>
+                
             </div>
 
         );
