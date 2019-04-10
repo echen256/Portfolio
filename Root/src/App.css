@@ -153,13 +153,14 @@ body {
 }
 
 .modal-text{
-  font-family: 'Lora'
+  font-family: 'Lora';
+  font-weight: 600;
 }
 
 .modal-content {
   background-color: #fefefe;
   margin:10%;
-
+  padding:5%;
 }
 
 .modal-header{
@@ -184,7 +185,8 @@ body {
   width : 200px;
   height: 200px;
   float:left;
-  margin:20px;
+  margin-right:20px;
+  margin-left:20px;
 }
 @media screen and (max-width : 600px){
   .modal-body{
@@ -194,8 +196,9 @@ body {
   .modal-image{
     width: 90%;
     height: auto;
-    margin:5%;
+    margin-top: 5%;
   }
+  
 }
 .close {
   color: #aaa;
