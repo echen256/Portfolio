@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import portfolioPic from "./../../assets/P4.jpg"
+import portfolioPic from "./../../assets/p5.jpg"
 
 export class UserPic extends Component {
     render() {
@@ -11,10 +11,11 @@ export class UserPic extends Component {
                     </img>
                 </div>
 
-                <div>
+
+                <div style = {{marginLeft:"5%"}}>
                     <div className=" bottomBorder">
                         Eric Chen
-                </div>
+                 </div>
 
                     <div className="justified font-med ">
                         Full Stack Web Developer

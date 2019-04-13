@@ -7,9 +7,7 @@ export class PortfolioItem extends Component {
         if (! this.props.root.state.modalVisible){
             this.props.root.setState({
                 modalVisible : true,
-                modalImage : this.props.data.src,
-                modalTitle : this.props.data.title,
-                modalBody: this.props.data.body
+                data : this.props.data
             });
         }
         
@@ -26,7 +24,7 @@ export class PortfolioItem extends Component {
     render() {
         return (
             <div className="margin-20px" onClick = {this.openModal}>
-                <img alt="null" src={this.props.data.src} width="70%" height = "auto" />
+                <img className = "portfolioItemPic" alt="null" src={this.props.data.src}/>
 
             </div>
         );

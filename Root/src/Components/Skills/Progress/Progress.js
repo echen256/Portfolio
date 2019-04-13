@@ -5,7 +5,8 @@ import { Z_BLOCK } from "zlib";
 export class Progress extends Component {
     
     borderRadius = "3px";
-    progressColor = "#0f52ba";
+    progressColor = "#be9063";
+    emptyColor = "#132226"
     fill = this.props.value + "%";
     empty = (100 - this.props.value) + "%"
     left = {

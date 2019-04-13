@@ -14,7 +14,7 @@ export class Description extends Component {
     
                 <div className = "descriptionText">
                 <p>
-                Hi! My name is Eric Chen and I am an aspiring web developer. I have recently graduated from the UC
+                Hi! My name is Eric Chen and I am a web developer. I have recently graduated from the UC
                     Berekely
                     Online Bootcamp, which you can find here.
                     Below are the three main projects we worked on in class. Click on the image to find out more!

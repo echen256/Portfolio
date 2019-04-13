@@ -12,30 +12,26 @@ import { Contact } from '../Components/Contact/Contact';
 export class Home extends Component {
 
     state = {
-        modalTitle: "Placeholder Title",
-        modalBody: "Placeholder Body",
-        modalGitUrl: "Placeholder URL",
-        modalHerokuUrl: "Placeholder URL",
-        modalVisible: false,
-        modalImage : ""
+        data: "",
+        modalVisible: false
     }
- 
-
 
     render() {
         return (
             <div>
                 <div>
-                    {this.state.modalVisible ? <Modal root={this} /> : <div>
-                    <Navbar />
-                    <UserPic />
-                    <Description />
-                    <Portfolio root={this} />
-                    <Skills />
+                    <div>
+                        <Navbar />
+                        <UserPic />
+                        <Description />
+                        <Portfolio root={this} />
+
+                        {this.state.modalVisible ? <Modal root={this} /> : <div/>}
+                        <Skills />
+                    </div>
+                    
                 </div>
-                    }
-                </div>
-                
+
             </div>
 
         );
