@@ -38,7 +38,7 @@ export class Portfolio extends Component {
         title : 'NYT Article Community Recommender',
         body : <div>
                 <p>
-                    The NYT Community _______ was the final project of our bootcamp and had the most expansive requirements of the course.
+                    The NYT Community App was the final project of our bootcamp and had the most expansive requirements of the course.
                     We implemented a full MERN stack in addition to the NYT API and Passport in order to provide a comprehensive technical demonstration.
 
                     Main features include 
@@ -90,11 +90,10 @@ export class Portfolio extends Component {
 
     newbeeAppEntry = {
         title : 'Newbee Event Finder',
-        body : 'Placeholder',
-        src : beeImage,
-        technologies :["Jquery",""],
-        herokuURL : "",
-        gitURL : ""
+        body : 'Newbee is an event finder app and our first project. Our application allows the user to ',
+        technologies :["Jquery","HTML", "CSS","Firebase","Seat Geek API"],
+        herokuURL : "N/A",
+        gitURL : "https://github.com/Group-Project-1/Presentation"
     }
 
 

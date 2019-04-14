@@ -24,10 +24,16 @@ export class Skills extends Component {
                                     <Row items={["CSS", <Progress value = {65}/>]}/>
                                     <Row items={["HTML", <Progress value = {80}/>]}/>
                                     <Row items={["Javascript/NodeJS", <Progress value = {85}/>]}/>
+
+                                    <Row items={["Firebase", <Progress value = {50}/>]}/>
+
                                     <Row items={["Express", <Progress value = {69} />]}/>
                                     <Row items={["MongoDB", <Progress value = {60}/>]}/>
                                     <Row items={["MySQL", <Progress value = {50}/>]}/>
+
                                     <Row items={["React", <Progress value = {75}/>]}/>
+                                    
+                                   
                                 </div>
 
 
