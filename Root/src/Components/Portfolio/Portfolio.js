@@ -90,7 +90,15 @@ export class Portfolio extends Component {
 
     newbeeAppEntry = {
         title : 'Newbee Event Finder',
-        body : 'Newbee is an event finder app and our first project. Our application allows the user to ',
+        body : <div> 
+            <p>
+             Newbee is an event finder app and our first project. Our application allows the user to search for local events like
+             concerts and keep notes of them for later reference. We utilized the Seat Geeks API for event querying, the GeoIP 
+             API for getting the user's location, and FireBase for storage. My main contribution was developing the geocoding functionality of our application.
+
+            </p>
+            </div>,
+        src : beeImage,
         technologies :["Jquery","HTML", "CSS","Firebase","Seat Geek API"],
         herokuURL : "N/A",
         gitURL : "https://github.com/Group-Project-1/Presentation"
