@@ -30,8 +30,8 @@ export class Portfolio extends Component {
         </div>,
         src : stockmarketimage,
         technologies : ["Express","NodeJS","IEXTrading","Bootstrap","MySQL"],
-        herokuURL : "",
-        gitURL : ""
+        herokuURL : "https://lit-thicket-39018.herokuapp.com/",
+        gitURL : "https://github.com/MarkHays/stocks"
     }
 
     nytAppEntry = {
@@ -83,9 +83,9 @@ export class Portfolio extends Component {
         </div>,
 
         src : nytImage, 
-        technologies :["Mongo", "Express" , "React" , "NodeJS" , "Passport" , "Bootstrap"],
-        herokuURL : "",
-        gitURL : ""
+        technologies :["Mongo", "Express" , "React" , "NodeJS" , "Passport" , "Bootstrap", "Axios"],
+        herokuURL : "https://dry-wave-20540.herokuapp.com/",
+        gitURL : "https://github.com/group1-project3/Project-3"
     }
 
     newbeeAppEntry = {
@@ -99,8 +99,8 @@ export class Portfolio extends Component {
             </p>
             </div>,
         src : beeImage,
-        technologies :["Jquery","HTML", "CSS","Firebase","Seat Geek API"],
-        herokuURL : "N/A",
+        technologies :["Jquery","HTML", "CSS","Firebase","Seat Geek API", "AJAX"],
+        herokuURL : "",
         gitURL : "https://github.com/Group-Project-1/Presentation"
     }
 
