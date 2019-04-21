@@ -84,8 +84,8 @@ export class Portfolio extends Component {
 
         src : nytImage, 
         technologies :["Mongo", "Express" , "React" , "NodeJS" , "Passport" , "Bootstrap", "Axios"],
-        herokuURL : "https://dry-wave-20540.herokuapp.com/",
-        gitURL : "https://github.com/group1-project3/Project-3"
+        herokuURL : "https://nyt-app-echen256.herokuapp.com/recommendation",
+        gitURL : "https://github.com/echen256/Project-3"
     }
 
     newbeeAppEntry = {

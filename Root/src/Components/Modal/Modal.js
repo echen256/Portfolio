@@ -25,6 +25,7 @@ export class Modal extends Component {
         <div className="modal-content">
           <div className="modal-header"  onClick={this.closeModal}>
             {this.data.title}
+            <span style = {{float:"right"}}>X</span>
           </div>
 
           <div className="modal-body">
@@ -47,10 +48,12 @@ export class Modal extends Component {
                 <div>
                   <div className="thin-dark-border-bottom">Links</div>
                   <div>
-                    <a href={this.data.herokuUrl}>
+
+                    {this.data.herokuURL === "" ? <div/>: <a href={this.data.herokuURL}>
                       <img alt="null" className="linkIcon" src={heroku_pic} />
-                    </a>
-                    <a href={this.data.gitUrl}>
+                    </a>}
+                    
+                    <a href={this.data.gitURL}>
                       <img alt=" null" className="linkIcon" src={git_pic} />
                     </a>
                   </div>
