@@ -9,30 +9,7 @@ import beeImage from "./../../assets/beeIcon.png"
 export class Portfolio extends Component {
 
 
-    stockAppEntry = {
-        title: "StockX: Practice Stock Market App",
-        body: <div>
-            <p>StockX is a paper trading stock market app that was the second project I worked on at
-                           Bootcamp.
-                           The application allows the user to create an account, deposit imaginary money, and buy
-                           shares with that money.
-                           We utilized MySQL in order to store the user's transactions, balance, and positions, an
-                           Express + Node 
-                            backend in order to process purchase orders, <a href="https://iextrading.com/developer/">
-                    IEXTrading in order to get stock quotes,</a> and Bootstrap to style the frontend.
-                        </p>
-
-            <p>
-                StockX was a major 2 week collaboration between 4 people. My main contribution was writing
-                the routing code and the purchasing logic. 
-
-                        </p>
-        </div>,
-        src : stockmarketimage,
-        technologies : ["Express","NodeJS","IEXTrading","Bootstrap","MySQL"],
-        herokuURL : "https://lit-thicket-39018.herokuapp.com/",
-        gitURL : "https://github.com/MarkHays/stocks"
-    }
+    
 
     nytAppEntry = {
         title : 'NYT Article Community Recommender',
@@ -84,10 +61,33 @@ export class Portfolio extends Component {
 
         src : nytImage, 
         technologies :["Mongo", "Express" , "React" , "NodeJS" , "Passport" , "Bootstrap", "Axios"],
-        herokuURL : "https://nyt-app-echen256.herokuapp.com/recommendation",
+        herokuURL : "https://nyt-app-echen256.herokuapp.com",
         gitURL : "https://github.com/echen256/Project-3"
     }
+    stockAppEntry = {
+        title: "StockX: Practice Stock Market App",
+        body: <div>
+            <p>StockX is a paper trading stock market app that was the second project I worked on at
+                           Bootcamp.
+                           The application allows the user to create an account, deposit imaginary money, and buy
+                           shares with that money.
+                           We utilized MySQL in order to store the user's transactions, balance, and positions, an
+                           Express + Node 
+                            backend in order to process purchase orders, <a href="https://iextrading.com/developer/">
+                    IEXTrading in order to get stock quotes,</a> and Bootstrap to style the frontend.
+                        </p>
 
+            <p>
+                StockX was a major 2 week collaboration between 4 people. My main contribution was writing
+                the routing code and the purchasing logic. 
+
+                        </p>
+        </div>,
+        src : stockmarketimage,
+        technologies : ["Express","NodeJS","IEXTrading","Bootstrap","MySQL"],
+        herokuURL : "https://lit-thicket-39018.herokuapp.com/",
+        gitURL : "https://github.com/MarkHays/stocks"
+    }
     newbeeAppEntry = {
         title : 'Newbee Event Finder',
         body : <div> 
